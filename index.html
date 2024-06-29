@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME REVIEWS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="images/logo-sm.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<section id="home">
+    <header> </header>
+
+    <div class="container-fluid m-auto position-sticky top-0 nav-bg z-3">
+        <nav class="navbar navbar-expand-lg shadow-lg p-3 rounded-4  m-auto py-1 ">
+            <div class="container-fluid">
+                <img src="images/logo-sm.png" width="40px" height="40px" alt="">
+                <a class="navbar-brand text-white text-uppercase m-2" href="#"> GAME REVIEWS </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase active" id="mmorpg" aria-current="page" href="#"
+                                data-category="mmorpg">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase" href="#" id="shooter"
+                                data-category="shooter">SHOOTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase" href="#" id="sailing"
+                                data-category="sailing">SAILING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase" href="#" id="permadeath"
+                                data-category="permadeath">PERMADEATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase" href="#" id="superhero"
+                                data-category="superhero">SUPERHERO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-1 text-uppercase" href="#" id="pixel" data-category="pixel">PIXEL</a>
+                        </li>
+                    </ul>
+                 
+                        <span class=" text-center icon m-3">
+                            <i class="fa-solid fa-moon " id="mood"></i>
+                        </span>
+                    
+                   
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <section class=" main-sec py-5 " >
+        <div class="container mt-5 px-4">
+            <div class="row g-4 " id="gameRow">
+
+
+
+            </div>
+        </div>
+
+    </section>
+</section>
+    
+
+    <section class="game-details position-absolute d-none  top-0 start-0 end-0 bottom-0 z-3 py-5" id="details">
+        <div class="container">
+            <div class="row ">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="text-white">Details Game</h1>
+                    <i class="fa-solid fa-xmark " id="close"></i>
+                </div>
+
+            </div>
+            <div class="row" id="detailsData">
+           
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <div id="spinner"
+        class="loading d-none position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
